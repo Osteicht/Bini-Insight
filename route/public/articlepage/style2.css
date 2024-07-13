@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', Sans-Serif;
+}
+
+.header-container{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background: teal;
+  box-shadow: 0 0 7px 5px rgba(50,50,50,0.3);
+  height: 80px;
+}
+
+.header-container .menubtn-container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0px 100px 0px 100px;
+}
+
+.header-container .menubtn-container :hover {
+  background-color: black;
+}
+
+.header-container #a-1 {
+  padding: 0px 30px 0px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.articles-container {
+  padding-top: 75px;
+}
+
+.articles-container .articles{
+  width: 100%;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.articles-container .articles h1{
+  padding: 0 0 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.articles-container .articleContents{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.articles-container article{
+  width: 100%;
+  padding: 0.5rem;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.articles-container article img{
+  width: 100%;
+}
+
+.articles-container article .articleTitle{
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.articles-container .articleStatus{
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: gray;
+}

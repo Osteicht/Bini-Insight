@@ -5,25 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet", href="./css/style.css">
-  <link rel="stylesheet", href="./css/articles.css">
+  <link rel="stylesheet" href="/style2.css">
   <title>Bini-Insight</title>
 </head>
 <body>
-  <header>
+
+  <header class="header-container">
+    <section class="menubtn-container">
+      <a id="a-1" class="home">Home</a>
+      <a href="#" id="a-1" class="about">About</a>
+      <a id="a-1" class="article">Article</a>
+    </section>
+  </header>
+  
+  <!-- <header>
     <div class="biniLogo">
       <img src="./assets/bini-logo-allwhite.png" />
     </div>
     <div class="menuBtn">
       <img src="./assets/588a64f5d06f6719692a2d13.png">
     </div>
-  </header>
-  <section class="articles">
+  </header> -->
+
+  <section class="articles-container">
     <h1>Articles</h1>
     <div class="articleContents">
       <article>
         <div class="articleImg">
-          <img src="./assets/binibini.jpg">
+          <img src="./binibini.jpg">
+        </div>
+        <div class="articleInfo">
+          <p class="articleTitle">
+            UPDATE: Bini concert at west philippine sea
+          </p>
+          <div class="articleStatus">
+            <p class="articleViews">
+              <i class="fa-solid fa-eye"></i>
+              103
+            </p>
+            <p class="articleDate">
+              <i class="fa-solid fa-calendar"></i>
+              Just now
+            </p>
+            <p class="articleComments">
+              <i class="fa-solid fa-comments"></i>
+              6
+            </p>
+            <p class="articleShare">
+              <i class="fa-solid fa-share"></i>
+              10
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="articleImg">
+          <img src="./binibini.jpg">
         </div>
         <div class="articleInfo">
           <p class="articleTitle">
@@ -51,35 +89,7 @@
       </article>
       <article>
         <div class="articleImg">
-          <img src="./assets/binibini.jpg">
-        </div>
-        <div class="articleInfo">
-          <p class="articleTitle">
-            UPDATE: Bini concert at west philippine sea
-          </p>
-          <div class="articleStatus">
-            <p class="articleViews">
-              <i class="fa-solid fa-eye"></i>
-              103
-            </p>
-            <p class="articleDate">
-              <i class="fa-solid fa-calendar"></i>
-              Just now
-            </p>
-            <p class="articleComments">
-              <i class="fa-solid fa-comments"></i>
-              6
-            </p>
-            <p class="articleShare">
-              <i class="fa-solid fa-share"></i>
-              10
-            </p>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="articleImg">
-          <img src="./assets/binibini.jpg">
+          <img src="./binibini.jpg">
         </div>
         <div class="articleInfo">
           <p class="articleTitle">
@@ -107,8 +117,13 @@
       </article>
     </div>
   </section>
+
   <footer>
     <p>All rights reserved.</p>
   </footer>
+
+  <script src="javascript2.js"></script>
+  
 </body>
+
 </html>

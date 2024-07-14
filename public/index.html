@@ -1,27 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags natin -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Links sa mga external stylesheets natin -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet", href="./css/style.css">
+  <link rel="stylesheet" href="./public/css/style.css">
+  
+  <!-- Title of the page -->
   <title>Bini-Insight</title>
+  
+  <!-- Inline styles for the page (temporary lang ito for quick transfer lang hehe) -->
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    
+    /* Overlay styles */
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      background-color: #FD836D;
+      transition: .1s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    /* Gawin nating responsive yung design natin sa small screens*/
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Header section -->
   <header>
+    
+    <!-- Bini logo -->
     <div class="biniLogo">
       <img src="./assets/bini-logo-allwhite.png" />
     </div>
-    <div class="menuBtn">
+    
+    <!-- Menu button -->
+    <div class="menuBtn" onclick="openNav()">
       <img src="./assets/588a64f5d06f6719692a2d13.png">
     </div>
+    
+    
+    <!-- Overlay navigation menu -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Article</a>
+        <a href="#">Merchandise</a>
+      </div>
+    </div>
   </header>
+  
+  <!-- Homepage section -->
   <section class="homepage">
+    
+    <!-- Bini background image -->
     <div class="biniBackground">
       <img src="./assets/biniBgImg.jpg"/>
     </div>
+    
+    
+    <!-- Bini overview section -->
     <div class="biniOverview">
+      
+      
+      <!-- Highlight hash section -->
       <div class="highlightHash">
         <p>#Blooms</p>
         <div class="biniCenterProfile">
@@ -29,19 +123,36 @@
         </div>
         <p>#Fandom</p>
       </div>
+      
+      <!-- Section headings -->
       <div class="sectionHeadings">
         <h1>Overview</h1>
       </div>
+      
+      <!-- Overview text -->
       <p><strong>Bini Fans Community</strong> is an online platform designed exclusively for fans of the popular group Bini. Our mission is to create a central hub where fans can gather, interact, and stay updated on all things related to Bini.</p>
     </div>
     
-<!--
+    <!--
     <div class="pickYourBias">
       <h3>Pick Your Bias</h3>
     </div>
- -->
- 
+     -->
+     
   </section>
+  
+  <!-- Yung function nato is para sa open at closing ng menu natin-->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  
+  <!-- Footer section -->
   <footer>
     <p>All rights reserved.</p>
   </footer>

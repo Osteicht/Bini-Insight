@@ -17,8 +17,8 @@ router.get(`/javascript.js`, (req, res) => {
 router.get(`/home/biniProfile.jpg`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `homepage`, `biniProfile.jpg`));
 })
-router.get(`/home/biniBgImg.jpg`, (req, res) => {
-  res.sendFile(path.join(__dirname, `public`, `homepage`, `biniBgImg.jpg`));
+router.get(`/home/biniBG.jpeg`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `homepage`, `biniBG.jpeg`));
 })
 
 module.exports = router;

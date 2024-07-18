@@ -14,10 +14,10 @@ router.get(`/style.css`, (req, res) => {
 router.get(`/javascript.js`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `homepage`, `javascript.js`));
 })
-router.get(`/home/biniProfile.jpg`, (req, res) => {
-  res.sendFile(path.join(__dirname, `public`, `homepage`, `biniProfile.jpg`));
-})
-router.get(`/home/biniBG.jpeg`, (req, res) => {
+// router.get(`/biniProfile.jpg`, (req, res) => {
+//   res.sendFile(path.join(__dirname, `public`, `homepage`, `biniProfile.jpg`));
+// })
+router.get(`/biniBG.jpeg`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `homepage`, `biniBG.jpeg`));
 })
 

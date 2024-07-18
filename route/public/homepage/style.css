@@ -63,13 +63,13 @@ body{
   cursor: pointer;
 }
 
-.navLinks #link:hover {
+.headerContainer .navLinks #link:hover {
   background-color: black;
   color: #fff;
 }
 
 
-.menuBtn img{
+.headerContainer .menuBtn img{
   width: 100%;
   height: 100%;
 }
@@ -93,11 +93,11 @@ body{
   background-position: center;
 }
 
-.homepageContents{
+.homepage .homepageContents{
   
 }
 
-.homepageContents .wcMessage{
+.homepage .homepageContents .wcMessage{
   padding: 2rem;
 }
 
@@ -114,7 +114,6 @@ body{
   color: #f0f0f0;
   text-align: center;
 }
-
 
 
 

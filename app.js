@@ -10,9 +10,12 @@ app.use(`/`, homeRoute);
 app.use(`/home/`, homeRoute);
 app.use(`/style.css`, homeRoute);
 app.use(`/javascript.js`, homeRoute);
+// app.use(`/biniProfile.jpg`, homeRoute);
+app.use(`/biniBG.jpeg`, homeRoute);
 
 app.use(`/`, articleRoute);
 app.use(`/article/`, articleRoute);
+
 
 app.listen(port, () => {
     console.log(`Server is listening on port: ${port}`);

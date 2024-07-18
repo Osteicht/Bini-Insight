@@ -3,13 +3,13 @@ const path = require('path');
 const router = express.Router();
 
 router.get(`/article/`, (req, res) => {
-  res.sendFile(path.join(__dirname, `public`, `articlepage`, `index2.html`));
+  res.sendFile(path.join(__dirname, `public`, `articlepage`, `article.html`));
 })
-router.get(`/style2.css`, (req, res) => {
-  res.sendFile(path.join(__dirname, `public`, `articlepage`, `style2.css`));
+router.get(`/article.css`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `articlepage`, `article.css`));
 })
-router.get(`/javascript2.js`, (req, res) => {
-  res.sendFile(path.join(__dirname, `public`, `articlepage`, `javascript2.js`));
+router.get(`/article.js`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `articlepage`, `article.js`));
 })
 router.get(`/article/binibini.jpg`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `articlepage`, `binibini.jpg`));

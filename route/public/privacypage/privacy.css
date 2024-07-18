@@ -81,27 +81,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: 
-    linear-gradient(
-      rgba(0,0,0,0.3), 
-      rgba(0,0,0,0.4), 
-      rgba(0,0,0,0.55), 
-      rgba(0,0,0,0.65)
-    ), 
-    url('biniBG.jpeg');
-  background-size: cover;
   background-position: center;
-}
-
-.homepage .homepageContents{
-  
 }
 
 .homepage .homepageContents .wcMessage{
   padding: 2rem;
 }
 
-.wcMessage h1, span{
+.homepage .wcMessage h1, span{
   font-size: 6rem;
   font-weight: 400;
   font-family: 'Luckiest Guy', 'Montserrat';
@@ -109,7 +96,7 @@ body{
   text-align: center;
 }
 
-.wcMessage p{
+.homepage .wcMessage p{
   font-size: 2rem;
   color: #f0f0f0;
   text-align: center;
@@ -177,7 +164,7 @@ body{
   box-shadow: 0 0 7px 3px rgba(50,50,50,0.1);
 } */
 
-footer{
+.footerContainer{
   width: 100%;
   min-height: 5rem;
   display: flex;
@@ -188,7 +175,19 @@ footer{
   background: var(--primary);
 } 
 
-
+.footerContainer .termsprivacyContainer {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.footerContainer .terms {
+  color: black;
+  text-decoration: underline;
+}
+.footerContainer .privacy {
+  color: black;
+  text-decoration: underline;
+}
 
 
 .headerContainer .navLinksToggle{

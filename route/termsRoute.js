@@ -8,7 +8,10 @@ router.get(`/terms-of-agreement/`, (req, res) => {
 router.get(`/terms.css`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `termspage`, `terms.css`));
 })
-router.get(`/terms.js`, (req, res) => {
+router.get(`/global.js`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `global.js`));
+})
+router.get(`/global.js`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `termspage`, `terms.js`));
 })
 

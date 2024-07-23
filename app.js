@@ -2,19 +2,23 @@ const express = require(`express`);
 const app = express();
 const port = process.env.PORT || 5000;
 
-const homeRoute = require(`./route/homeRoute`);
-const articleRoute = require(`./route/articleRoute`);
-const aboutRoute = require (`./route/aboutRoute`);
-const termsRoute = require(`./route/termsRoute`);
-const privacyRoute = require(`./route/privacyRoute`);
+const homeRoute = require(`./route/home`);
+const articleRoute = require(`./route/article`);
+const aboutRoute = require (`./route/about`);
+const termsRoute = require(`./route/terms`);
+const privacyRoute = require(`./route/privacy`);
 
+async function checkUrl (req, res, next){
+    console.log(`Requested URL: ${req.url}, Method: ${req.method}`);
+    next(); 
+}
 
-app.use(`/`, homeRoute);
+app.use(`/`, checkUrl ,homeRoute);
 app.use(`/home/`, homeRoute);
-app.use(`/home.css`, homeRoute);
-app.use(`/home.js`, homeRoute);
+// app.use(`/home.css`, homeRoute);
+// app.use(`/home.js`, homeRoute);
 // app.use(`/biniProfile.jpg`, homeRoute);
-app.use(`/biniBG.jpeg`, homeRoute);
+// app.use(`/biniBG.jpeg`, homeRoute);
 
 app.use(`/`, articleRoute);
 app.use(`/article/`, articleRoute);

@@ -37,7 +37,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 1.1rem 2rem;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   z-index: 100;
@@ -162,5 +162,12 @@ body{
   .navBar #link:hover{
     background: #000;
     color: #fff;
+  }
+}
+
+@media (max-width: 1347px) {
+  .termsAndAgreement .content-container {
+    padding-bottom: 100px;
+    padding: 0px 250px 100px 250px;
   }
 }

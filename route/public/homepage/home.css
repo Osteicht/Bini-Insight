@@ -1,7 +1,7 @@
 .homepage{
   width: 100%;
   min-height: calc(100vh - var(--bigScreenMargin));
-  margin: var(--bigScreenMargin) 0 0 0;
+  /* margin: var(--bigScreenMargin) 0 0 0; */
   display: flex;
   justify-content: center;
   align-items: center;

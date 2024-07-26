@@ -14,5 +14,11 @@ router.get(`/global.js`, (req, res) => {
 router.get(`/privacy.js`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `privacypage`, `privacy.js`));
 })
+router.get(`/popvlogo.png`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `homepage`, `popvlogo.png`));
+})
+router.get(`/global.css`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `global.css`));
+});
 
 module.exports = router;

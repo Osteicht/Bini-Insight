@@ -4,16 +4,15 @@ const port = process.env.PORT || 5000;
 
 const homeRoute = require(`./route/home`);
 const articleRoute = require(`./route/article`);
-const aboutRoute = require (`./route/about`);
 const termsRoute = require(`./route/terms`);
 const privacyRoute = require(`./route/privacy`);
 
-async function checkUrl (req, res, next){
-    console.log(`Requested URL: ${req.url}, Method: ${req.method}`);
-    next(); 
-}
+// async function checkUrl (req, res, next){
+//     console.log(`Requested URL: ${req.url}, Method: ${req.method}`);
+//     next(); 
+// }
 
-app.use(`/`, checkUrl ,homeRoute);
+app.use(`/`, homeRoute);
 app.use(`/home/`, homeRoute);
 // app.use(`/home.css`, homeRoute);
 // app.use(`/home.js`, homeRoute);
@@ -22,9 +21,6 @@ app.use(`/home/`, homeRoute);
 
 app.use(`/`, articleRoute);
 app.use(`/article/`, articleRoute);
-
-app.use(`/`, aboutRoute);
-app.use(`/about/`, aboutRoute);
 
 app.use(`/`, termsRoute);
 app.use(`/terms-of-agreement/`, termsRoute);

@@ -30,4 +30,8 @@ router.get(`/biniBG.jpeg`, (req, res) => {
   res.sendFile(path.join(__dirname, `public`, `homepage`, `biniBG.jpeg`));
 })
 
+router.get(`/popvlogo.png`, (req, res) => {
+  res.sendFile(path.join(__dirname, `public`, `homepage`, `popvlogo.png`));
+})
+
 module.exports = router;

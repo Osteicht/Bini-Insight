@@ -5,25 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet", href="./css/style.css">
-  <link rel="stylesheet", href="./css/articles.css">
+  <link rel="stylesheet" href="/article.css">
+  <link rel="stylesheet" href="/global.css">
   <title>Bini-Insight</title>
 </head>
 <body>
-  <header>
-    <div class="biniLogo">
-      <img src="./assets/bini-logo-allwhite.png" />
+
+  <header class="headerContainer">
+    <div class="projectLogo">
+      <img src="popvlogo.png" alt="logo">
     </div>
-    <div class="menuBtn">
-      <img src="./assets/588a64f5d06f6719692a2d13.png">
+
+    <nav class="navLinks">
+      <a href="/home/" id="link">Home</a>
+      <a href="/home/#about" id="link">About</a>
+      <a href="/article/" id="link">Article</a>
+    </nav>
+
+    <div class="navLinksToggle">
+      <i class="fa-solid fa-bars menuBtn"></i>
+      <nav class="navBar">
+        <a href="/home/" id="link">Home</a>
+        <a href="/home/#about" id="link">About</a>
+        <a href="/article/" id="link">Article</a>
+      </nav>
     </div>
+
   </header>
-  <section class="articles">
+  
+  <section class="articles-container">
     <h1>Articles</h1>
     <div class="articleContents">
       <article>
         <div class="articleImg">
-          <img src="./assets/binibini.jpg">
+          <img src="./binibini.jpg">
+        </div>
+        <div class="articleInfo">
+          <p class="articleTitle">
+            UPDATE: Bini concert at west philippine sea
+          </p>
+          <div class="articleStatus">
+            <p class="articleViews">
+              <i class="fa-solid fa-eye"></i>
+              103
+            </p>
+            <p class="articleDate">
+              <i class="fa-solid fa-calendar"></i>
+              Just now
+            </p>
+            <p class="articleComments">
+              <i class="fa-solid fa-comments"></i>
+              6
+            </p>
+            <p class="articleShare">
+              <i class="fa-solid fa-share"></i>
+              10
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="articleImg">
+          <img src="./binibini.jpg">
         </div>
         <div class="articleInfo">
           <p class="articleTitle">
@@ -51,35 +95,7 @@
       </article>
       <article>
         <div class="articleImg">
-          <img src="./assets/binibini.jpg">
-        </div>
-        <div class="articleInfo">
-          <p class="articleTitle">
-            UPDATE: Bini concert at west philippine sea
-          </p>
-          <div class="articleStatus">
-            <p class="articleViews">
-              <i class="fa-solid fa-eye"></i>
-              103
-            </p>
-            <p class="articleDate">
-              <i class="fa-solid fa-calendar"></i>
-              Just now
-            </p>
-            <p class="articleComments">
-              <i class="fa-solid fa-comments"></i>
-              6
-            </p>
-            <p class="articleShare">
-              <i class="fa-solid fa-share"></i>
-              10
-            </p>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="articleImg">
-          <img src="./assets/binibini.jpg">
+          <img src="./binibini.jpg">
         </div>
         <div class="articleInfo">
           <p class="articleTitle">
@@ -107,8 +123,17 @@
       </article>
     </div>
   </section>
-  <footer>
-    <p>All rights reserved.</p>
+
+  <footer id="footer" class="footerContainer">
+    <div class="termsprivacyContainer">
+      <p>Copyright © 2024. All rights reserved.</p>
+      <a class="terms" href="/terms-of-agreement/">Terms of Agreement</a>
+      <a class="privacy" href="/privacy/">Privacy Policy</a>
+    </div>
   </footer>
+
+  <script src="global.js"></script>
+  <script src="article.js"></script>
 </body>
+
 </html>

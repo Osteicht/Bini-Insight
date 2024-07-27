@@ -34,7 +34,7 @@
 }
 
 .wcMessage p{
-  font-size: 2rem;
+  font-size: 1rem;
   color: #f0f0f0;
   text-align: center;
 }
@@ -48,15 +48,9 @@
   padding-top: 5rem;
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 900px){
   .homepage{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
   }
   
@@ -67,4 +61,58 @@
   .wcMessage p{
     font-size: 1rem;
   }
+}
+
+@media (max-width: 1660px) {
+  body {
+      max-width: 1660px;
+  }
+  .wcMessage h1, span {
+    font-size: 3rem;
+    font-weight: 400;
+}
+}
+
+@media (max-width: 880px) {
+  body {
+      max-width: 880px;
+  }
+  .wcMessage h1, span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+}
+
+@media (max-width: 600px) {
+  body {
+      max-width: 600px;
+  }
+  .wcMessage h1, span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.wcMessage p{
+  font-size: 0.5rem;
+}
+
+}
+
+@media (max-width: 388px) {
+  body {
+      max-width: 388px;
+  }
+  .wcMessage h1, span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.homepage .homepageContents .wcMessage {
+  padding: 0rem;
+}
+
+.wcMessage p{
+  font-size: 0.5rem;
+}
+
 }

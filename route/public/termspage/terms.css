@@ -27,22 +27,83 @@
   font-weight: 400;
 }
 
-/* @media (max-width: 1347px) {
+@media (max-width: 1347px) {
+  body {
+    max-width: 1347px;
+  }
   .termsAndAgreement .content-container {
     padding-bottom: 100px;
     padding: 0px 250px 100px 250px;
   }
 }
 @media (max-width: 1161px) {
+  body {
+    max-width: 1161px;
+  }
   .termsAndAgreement .content-container {
     padding-bottom: 100px;
     padding: 0px 180px 100px 180px;
   }
 }
 
-@media (max-width: 1161px) {
+@media (max-width: 900px) {
+  body {
+    max-width: 900px;
+  }
   .termsAndAgreement .content-container {
     padding-bottom: 100px;
-    padding: 0px 180px 100px 180px;
+    padding: 0px 100px 100px 100px;
   }
-} */
+}
+
+@media (max-width: 748px) {
+  body {
+    max-width: 748px;
+  }
+  .termsAndAgreement .content-container {
+    padding-bottom: 100px;
+    padding: 0px 100px 100px 100px;
+  }
+
+  .termsAndAgreement p {
+    font-size: 0.7rem;
+  }
+
+  .termsAndAgreement h1 {
+    font-size: 1rem;
+  }
+  .termsAndAgreement h5 {
+    font-size: 0.7rem;
+}
+
+.termsAndAgreement span {
+  font-size: 0.7rem;
+}
+}
+
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
+  .termsAndAgreement .content-container {
+    padding-bottom: 50px;
+    padding: 0px 50px 100px 50px;
+  }
+
+  .termsAndAgreement h1 {
+    padding: 40px 0px 40px 0px;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+  }
+  .termsAndAgreement .content-container {
+    padding-bottom: 25px;
+    padding: 0px 25px 100px 25px;
+  }
+
+}

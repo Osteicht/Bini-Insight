@@ -117,13 +117,17 @@ body{
 }
 
 @media screen and (max-width: 900px){
-  body{
+  /* body{
     padding: 3.1rem 0 0;
-  }
+  } */
   
-  .headerContainer{
+  .headerContainer .projectLogo img {
+    height: 50px;
+}
+
+  /* .headerContainer{
     padding: 0.8rem 1rem;
-  }
+  } */
   
   .headerContainer .navLinks{
     display: none;
@@ -137,6 +141,13 @@ body{
   
   .navLinksToggle i{
     font-size: 1.5rem;
+    width: max-content;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 23px 0rem;
   }
   
   .navLinksToggle .navBar{
@@ -177,4 +188,68 @@ body{
     padding-bottom: 100px;
     padding: 0px 250px 100px 250px;
   }
+}
+
+@media (max-width: 900px) {
+  body {
+    max-width: 900px;
+  }
+  .footerContainer .copyright{
+    font-size: 0.9rem;
+  }
+  .footerContainer .terms{
+    font-size: 0.9rem;
+  }
+  .footerContainer .privacy{
+    font-size: 0.9rem;
+  }
+
+  .footerContainer .termsprivacyContainer {
+    gap: 50px;
+}
+}
+
+@media (max-width: 748px) {
+  body {
+    max-width: 748px;
+  }
+  .footerContainer .copyright{
+    font-size: 0.6rem;
+  }
+  .footerContainer .terms{
+    font-size: 0.6rem;
+  }
+  .footerContainer .privacy{
+    font-size: 0.6rem;
+  }
+  .footerContainer .termsprivacyContainer {
+    gap: 25px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+  }
+  .headerContainer .projectLogo img {
+      height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+  }
+  .footerContainer .copyright{
+    font-size: 0.4rem;
+  }
+  .footerContainer .terms{
+    font-size: 0.4rem;
+  }
+  .footerContainer .privacy{
+    font-size: 0.4rem;
+  }
+  .footerContainer .termsprivacyContainer {
+    gap: 25px;
+}
 }
